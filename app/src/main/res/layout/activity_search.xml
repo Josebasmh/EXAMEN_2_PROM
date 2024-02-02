@@ -1,9 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingHorizontal="10sp"
+    android:paddingVertical="30sp"
     tools:context=".SearchActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/consulta"
+        android:textSize="50sp"
+        android:layout_marginBottom="50sp"/>
+    <EditText
+        android:id="@+id/etConsulta"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="@string/buscar"
+        android:onClick="buscarNombre"
+        android:layout_marginBottom="50sp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="@string/id"/>
+        <EditText
+            android:id="@+id/Id"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"/>
+        <EditText
+            android:id="@+id/Nombre"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="@string/simbolo"/>
+
+        <EditText
+            android:id="@+id/Simbolo"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="@string/num_at_mico"/>
+
+        <EditText
+            android:id="@+id/NumAtomico"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50sp">
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="@string/estado"/>
+
+        <EditText
+            android:id="@+id/Estado"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:onClick="volver"
+        android:text="@string/volver"/>
+</LinearLayout>

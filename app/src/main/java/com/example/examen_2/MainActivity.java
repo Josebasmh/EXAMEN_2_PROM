@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public void cargarConsulta(View view) {
         Intent i = new Intent(this,SearchActivity.class);
         startActivity(i);
-        tvConsulta.setText(cont+"");
+        refrescarContador();
     }
 
     public void cargarQuimico(View view) {
@@ -34,5 +34,8 @@ public class MainActivity extends AppCompatActivity {
     public void salir(View view) {
         Toast.makeText(getApplicationContext(), "Adiós, vuelva pronto", Toast.LENGTH_SHORT).show();
         finish();
+    }
+    private void refrescarContador(){
+        tvConsulta.setText(cont+"");
     }
 }

@@ -3,4 +3,12 @@
     <string name="consultar">Consultar</string>
     <string name="quimico">Quimico</string>
     <string name="salir">Salir</string>
+    <string name="consulta">CONSULTA</string>
+    <string name="buscar">Buscar</string>
+    <string name="id">Id:</string>
+    <string name="estado">Estado:</string>
+    <string name="num_at_mico">Num.Atómico:</string>
+    <string name="simbolo">Simbolo:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="volver">Volver</string>
 </resources>
